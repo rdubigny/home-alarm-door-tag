@@ -14,9 +14,5 @@ class Message:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.connect((self.HOST, self.PORT))
         s.sendall(bytes(message, 'UTF-8'))
-        data = s.recv(1024).decode('UTF-8')
+        logger.logger.info('MESSAGE SENT!')
         s.close()
-        if data == 'OK':
-            logger.logger.info('MESSAGE SENT!')
-        else:
-            logger.logger.error('MESSAGE NOT SENT!')
