@@ -3,7 +3,7 @@
 import time
 import RPi.GPIO as io
 
-# from modules import logger
+from modules import logger
 from modules.message import Message
 from modules.counter import Counter
 
@@ -29,6 +29,8 @@ def hit_callback(channel):
 
 io.add_event_detect(door_pin, io.RISING, callback=opened_callback, bouncetime=2000)
 io.add_event_detect(vibration_pin, io.RISING, callback=hit_callback, bouncetime=500)
+
+logger.logger.info('TAG LISTENING!')
 
 while True:
     time.sleep(1)
