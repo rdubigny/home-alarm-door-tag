@@ -17,3 +17,7 @@ This project is to work with rdubigny/home-alarm .
 * https://raspberrypi.stackexchange.com/questions/37241/vibration-sensor-what-i-am-doing-wrong
 * https://sourceforge.net/p/raspberry-gpio-python/wiki/BasicUsage/
 * https://sourceforge.net/p/raspberry-gpio-python/wiki/Inputs/
+
+#### 31/03/16
+
+* http://bohdan-danishevsky.blogspot.fr/2015/10/building-python-35-on-raspberry-pi-2.html
